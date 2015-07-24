@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+<!-- <property name="hibernate.connection.url">jdbc:mysql://nw4869tcfl.mysql.rds.aliyuncs.com/db_onlinemealordering?characterEncoding=utf8</property>-->
+<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1/db_onlinemealordering?characterEncoding=utf8</property>
+<property name="hibernate.connection.username">root</property>
+<property name="hibernate.connection.password">6881704f</property>
+<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+<property name="show_sql">true</property>
+<mapping resource="com/nightwind/omo/model/Dish.hbm.xml"></mapping>
+<mapping resource="com/nightwind/omo/model/User.hbm.xml"></mapping>
+<mapping resource="com/nightwind/omo/model/Delivery.hbm.xml"></mapping>
+<mapping resource="com/nightwind/omo/model/Order.hbm.xml"></mapping>
+<mapping resource="com/nightwind/omo/model/Noshery.hbm.xml"></mapping>
+</session-factory>
+</hibernate-configuration>

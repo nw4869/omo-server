@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.nightwind.omo.model">   
+    <class name="com.nightwind.omo.model.Noshery" table="noshery">   
+        <id name="id" column="nosh_id" type="int">   
+            <generator class="increment"/>  
+        </id>   
+        <property name="name" column="nosh_name" type="string" />   
+        <property name="phone" column="nosh_phone" type="string" />   
+        <property name="address" column="nosh_addr" type="string" />   
+        <property name="style" column="nosh_style" type="string" />
+        <property name="username" column="account" type="string" />
+    </class>   
+</hibernate-mapping>  

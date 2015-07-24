@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.nightwind.omo.model">   
+    <class name="com.nightwind.omo.model.Order" table="orders">   
+        <id name="id" column="order_id" type="int">   
+            <generator class="increment"/>  
+        </id>   
+        <property name="username" column="account" type="string" />   
+        <property name="address" column="deli_address" type="string" />   
+        <property name="tel" column="phone_number" type="string" />   
+        <property name="dishId" column="dish_id" type="int" />
+        <property name="dishCount" column="dish_number" type="int" />
+        <property name="dishCost" column="dish_cost" type="double" />   
+        <property name="cost" column="order_cost" type="double" />   
+        <property name="status" column="order_status" type="string" />   
+        <property name="time" column="order_time" type="timestamp" />   
+        <property name="confirmTime" column="confirm_time" type="timestamp" />   
+        <property name="sendTime" column="send_time" type="timestamp" />   
+    </class>   
+</hibernate-mapping>  

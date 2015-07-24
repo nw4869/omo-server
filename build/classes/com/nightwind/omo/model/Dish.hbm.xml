@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.nightwind.omo.model">   
+    <class name="com.nightwind.omo.model.Dish" table="dish">   
+        <id name="id" column="dish_id" type="int">   
+            <generator class="increment"/>  
+        </id>   
+        <property name="name" column="dish_name" type="string" />   
+        <property name="info" column="dish_info" type="string" />   
+        <property name="cost" column="dish_cost" type="double" />   
+        <property name="picUrl" column="dish_picurl" type="string" />
+        <property name="status" column="dish_status" type="string" />
+        <property name="nosheryId" column="nosh_id" type="int" />
+    </class>   
+</hibernate-mapping>  

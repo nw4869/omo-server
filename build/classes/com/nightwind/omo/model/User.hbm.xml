@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.nightwind.omo.model">   
+    <class name="com.nightwind.omo.model.User" table="login">   
+        <id name="username" column="account" type="string">   
+            <generator class="assigned"/>  
+        </id>   
+        <property name="password" column="password" type="string" />   
+        <property name="identity" column="identity" type="string" />   
+        <property name="name" column="name" type="string" />   
+        <property name="balance" column="balance" type="double" />   
+    </class>   
+</hibernate-mapping>  

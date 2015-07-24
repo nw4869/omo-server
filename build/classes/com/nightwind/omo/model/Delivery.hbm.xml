@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.nightwind.omo.model">   
+    <class name="com.nightwind.omo.model.Delivery" table="delivery">   
+        <id name="id" column="deli_id" type="int">   
+            <generator class="increment"/>  
+        </id>   
+        <property name="username" column="account" type="string" />   
+        <property name="address" column="deli_address" type="string" />   
+        <property name="tel" column="phone_number" type="string" />   
+        <property name="telVerifiTime" column="verifi_time" type="timestamp" />
+    </class>   
+</hibernate-mapping>  
